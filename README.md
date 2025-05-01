@@ -29,17 +29,17 @@ Any user file | Prompted on launch | Learner can load their own material
 3  |  High‑Level Architecture
 ----------------------------------------------------------------
 DST2FP.py
-├── DSP modules
-│   ├─ Equalizer     (IIR + adaptive FIR + mixed‑phase logic)
-│   ├─ Delay         (comb feedback, analytic zeros/poles)
-│   ├─ Reverb        (Schroeder‑style early reflections + mod. combs)
-│   └─ Compressor    (simple envelope follower)
-├── Utility classes   (Delay_Line, Allpass variants, LPFs)
-├── EffectsChain      (global processing order)
-├── Qt Widgets
-│   ├─ EffectModuleWidget (per‑effect controls & plots)
-│   └─ EffectsChainUI     (main window & transport)
-└── Audio callback    (sounddevice stream, RMS meters)
+\├── DSP modules
+\│   ├─ Equalizer     (IIR + adaptive FIR + mixed‑phase logic)
+\│   ├─ Delay         (comb feedback, analytic zeros/poles)
+\│   ├─ Reverb        (Schroeder‑style early reflections + mod. combs)
+\│   └─ Compressor    (simple envelope follower)
+\├── Utility classes   (Delay_Line, Allpass variants, LPFs)
+\├── EffectsChain      (global processing order)
+\├── Qt Widgets
+\│   ├─ EffectModuleWidget (per‑effect controls & plots)
+\│   └─ EffectsChainUI     (main window & transport)
+\└── Audio callback    (sounddevice stream, RMS meters)
 
 Key design choices
 Choice | Rationale
